@@ -53,11 +53,11 @@ export async function POST(request) {
       JSON.stringify({
         message: "something went wrong",
         error,
-        status: 403,
+        status: 500,
         success: false,
       }),
       {
-        status: 403,
+        status: 500,
       }
     );
   }
