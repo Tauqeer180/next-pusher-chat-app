@@ -3,7 +3,7 @@ import mongoose from "mongoose";
 // import { GridFSBucket } from "mongodb";
 const connectMongo = async () => {
   try {
-    console.log("Mongoose ", mongoose?.connections[0].readyState);
+    // console.log("Mongoose ", mongoose?.connections[0].readyState);
     if (mongoose.connections[0].readyState) {
       console.log("already connected");
       return mongoose.connection;
