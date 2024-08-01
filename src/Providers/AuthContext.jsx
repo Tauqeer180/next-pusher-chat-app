@@ -29,7 +29,7 @@ export const AuthProvider = ({ children }) => {
     setUser(user);
     setToken(token);
     setIsAuthenticated(true);
-    router.replace("/");
+    // router.replace("/");
   };
   const logout = () => {
     setIsAuthenticated(false);

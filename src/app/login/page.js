@@ -43,8 +43,8 @@ export default function Login() {
       queryClient.invalidateQueries({ queryKey: ["chatUsers"] });
       // Cookies.set("token", data?.token);
       // Cookies.set("user", JSON.stringify(data?.user));
-      setLoading(false);
-      router.replace("/");
+      // setLoading(false);
+      // router.replace("/");
       // refreshAuth();
     } else {
       setLoading(false);

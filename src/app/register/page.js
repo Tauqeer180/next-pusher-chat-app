@@ -44,10 +44,10 @@ export default function Register() {
 
       login(data?.token, data?.user);
 
-      setLoading(false);
+      // setLoading(false);
     } else {
     }
-    console.log(data);
+    // console.log(data);
     toast(data?.message);
     setLoading(false);
     // router.push('/')

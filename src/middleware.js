@@ -17,7 +17,7 @@ export function middleware(request) {
 
   // permissions.some(permittedRoute => route.startsWith(permittedRoute));
   const logedUserNotAccessPath = pathname === "/login";
-  if (logedUserNotAccessPath) {
+  if (pathname == "/login" || pathname == "/register") {
     // acessing the ot secure route without token, redirect to login page
     if (authToken) {
       return NextResponse.redirect(new URL("/chat", request.url));
