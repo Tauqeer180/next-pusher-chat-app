@@ -29,14 +29,15 @@ export const AuthProvider = ({ children }) => {
     setUser(user);
     setToken(token);
     setIsAuthenticated(true);
-    // router.replace("/");
+    router.replace("/");
   };
   const logout = () => {
     setIsAuthenticated(false);
-    setUser(null);
-    setToken(null);
     Cookies.remove("token");
     Cookies.remove("user");
+    setUser(null);
+    setToken(null);
+    router.replace("/login");
   };
 
   return (
